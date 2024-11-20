@@ -11,5 +11,9 @@
             "email": "dementev.em@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
+
 }
