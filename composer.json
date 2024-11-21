@@ -3,7 +3,11 @@
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
-        }
+        },
+	"files": [
+	    "src/Cli.php",
+	    "bin/brain-games"
+	]
     },
     "authors": [
         {
