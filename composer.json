@@ -15,6 +15,8 @@
             "email": "dementev.em@gmail.com"
         }
     ],
+    "description": "hexlet php",
+    "license": "MIT",
     "require": {
         "wp-cli/php-cli-tools": "^0.12.1"
     },
