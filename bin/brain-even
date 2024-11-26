@@ -1,0 +1,41 @@
+#!/usr/bin/env php
+<?php
+
+namespace BrainGames\Cli;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use function cli\line;
+use function cli\prompt;
+
+line('Welcome to the Brain Games!');
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
+
+line('Answer "yes" if the number is even, otherwise answer "no".');
+$i = 0;
+while ($i < 3) { 
+$randomNumber = mt_rand(1, 20);
+print_r("Question: {$randomNumber}\n");
+$answerUser = prompt('Your answer');
+$isEven = $randomNumber % 2;
+if (($answerUser == 'yes') && ($isEven == 0)) {
+    print_r("Correct!\n");
+    $i++;
+    } elseif (($answerUser == 'yes') && ($isEven != 0)) {
+        print_r("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {$name}!\n");
+            $i=4;
+    } elseif (($answerUser == 'no') && ($isEven != 0)) {
+        print_r("Correct!\n");
+        $i++;
+    } elseif (($answerUser == 'no') && ($isEven == 0)) {
+        print_r("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {$name}!\n");
+        $i=4;
+    } elseif (($answerUser != 'no') || ($isEven != 'yes' )) {
+        print_r("'{$answerUser}' is wrong answer ;(.\nLet's try again, {$name}!\n");
+        $i=4;
+    };
+}
+if ($i == 3) {
+print_r("Congratulations, {$name}!\n");
+}
