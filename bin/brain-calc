@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+
+namespace BrainGames\Engine;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use function cli\line;
+use function cli\prompt;
+use function BrainGames\Engine\greeting;
+use function BrainGames\Engine\questions;
+
+$nameGame = 'BrainCalc';
+
+$name = greeting();
+
+line('What is the result of the expression?');
+$i = 0;
+while ($i < 3) {
+$answerProg = questions($nameGame);
+$answerUser = prompt('Your answer');
+if ($answerUser == $answerProg) {
+print_r("Correct!\n");
+$i++;
+} else {
+print_r("{$answerUser} is wrong answer ;(. Correct answer was {$answerProg}.\nLet's try again, {$name}!\n");
+$i = 4;
+}
+}

@@ -3,6 +3,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\greeting;
+use function BrainGames\Engine\greeting;
 
-greeting();
+$user = greeting();
+
+print_r("{$user}\n");
