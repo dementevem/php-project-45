@@ -21,9 +21,9 @@
         "wp-cli/php-cli-tools": "^0.12.1"
     },
     "bin": [
-        "bin/brain-games",
-	"bin/brain-even",
-	"bin/barin-calc"
+        "src/Games/brain-games",
+	"src/Games/brain-even",
+	"src/Games/barin-calc"
     ],
     "require-dev": {
         "squizlabs/php_codesniffer": "*"

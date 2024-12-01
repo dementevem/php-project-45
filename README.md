@@ -6,3 +6,5 @@
 ### Start brain-even - https://asciinema.org/a/Qnd3dbHeWoizb0OphWEgZlDld
 ### Win brain-even - https://asciinema.org/a/rwQdlnVYvAeHNtAJRhpnYFZNg
 ### Lose brain-even - https://asciinema.org/a/zLoDtevkPJVVRwkYQJqYEWJWs
+### Start and Win brain-calc - https://asciinema.org/a/9uWiP8nN578FQ9gFXiaSSxVpY
+### Lose brain-calc - https://asciinema.org/a/YGw75owmtRZiGNzZe3bZDAEMa
