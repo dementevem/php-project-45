@@ -4,7 +4,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use function BrainGames\Engine\greeting;
+use function BrainGames\Engine\intro;
 
-$user = greeting();
-
-print_r("{$user}\n");
+intro();
